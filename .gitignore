@@ -17,7 +17,13 @@ yarn-debug.log*
 lerna-debug.log
 yarn-error.log*
 
-/packages/core/src/**
+/packages/core/src
+/packages/core/inline-namespaced-svg
+/packages/core/inline-svg
+
+es
+lib
+dist
 
 # IDE
 .idea
