@@ -2,10 +2,24 @@
   "name": "@lotus-design/icons",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "files": [
+    "lib",
+    "es"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "generate": "esno ./scripts/generate.ts"
+  },
+  "peerDependencies": {
+    "react": ">=16.0.0",
+    "react-dom": ">=16.0.0"
+  },
+  "dependencies": {
+    "@ant-design/colors": "^6.0.0",
+    "@lotus-design/icons-svg": "^1.0.0",
+    "@pansy/classnames": "^1.0.1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "MIT"
 }

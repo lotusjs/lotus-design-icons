@@ -1,14 +1,16 @@
 import { src, dest } from 'gulp';
-import { SVG2DefinitionOptions } from '../plugins/svg2Definition';
 import rename from 'gulp-rename';
-import { UseTemplatePluginOptions } from '../plugins/useTemplate';
+
 import { useTemplate, svg2Definition, svgo } from '../plugins';
 
 import type { OptimizeOptions } from 'svgo';
+import type { SVG2DefinitionOptions } from '../plugins/svg2Definition';
+import type { UseTemplatePluginOptions } from '../plugins/useTemplate';
 
 export interface GenerateIconsOptions
   extends SVG2DefinitionOptions,
-    UseTemplatePluginOptions {
+    UseTemplatePluginOptions
+{
   from: string[];
   toDir: string;
   svgoConfig: OptimizeOptions;
