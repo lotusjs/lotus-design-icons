@@ -1,3 +1,4 @@
+import { TransformFactory, TransformOptions } from '..';
 import {
   evolve,
   clone,
@@ -8,8 +9,7 @@ import {
   where,
   mergeRight
 } from 'ramda';
-
-import type { TransformOptions, AbstractNode, TransformFactory } from '../types';
+import { AbstractNode } from '../../../../templates/types';
 
 type Dictionary = Record<string, string>;
 
@@ -18,8 +18,8 @@ export function assignAttrsAtTag(
   extraPropsOrFn:
     | Dictionary
     | ((
-      options: TransformOptions & { previousAttrs: Dictionary }
-    ) => Dictionary)
+        options: TransformOptions & { previousAttrs: Dictionary }
+      ) => Dictionary)
 ): TransformFactory {
   return (options) => (asn) =>
     when<AbstractNode, AbstractNode>(

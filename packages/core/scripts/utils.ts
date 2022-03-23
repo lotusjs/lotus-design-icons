@@ -2,7 +2,7 @@ import { pipe } from 'ramda';
 import upperFirst from 'lodash/upperfirst';
 import camelCase from 'lodash/camelcase';
 
-export type ThemeTypeUpperCase = 'Filled' | 'Outlined' | 'TwoTone';
+import type { ThemeTypeUpperCase } from '../templates/types';
 
 export interface IdentifierMeta {
   name: string;

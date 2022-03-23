@@ -1,1 +1,0 @@
-export { generalConfig } from './general';
