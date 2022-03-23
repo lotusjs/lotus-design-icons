@@ -2,9 +2,19 @@
   "name": "@lotus-design/icons-svg",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "files": [
+    "lib",
+    "es",
+    "inline-svg",
+    "inline-namespaced-svg"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "generate": "esno ./scripts/generate.ts",
+    "build:es": "tsc --project tsconfig.build.json --module esnext --outDir es",
+    "build:lib": "tsc --project tsconfig.build.json --module commonjs --outDir lib",
+    "build": "npm run build:es && npm run build:lib"
   },
   "license": "MIT"
 }
