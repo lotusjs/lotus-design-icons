@@ -25,6 +25,8 @@ es
 lib
 dist
 
+.umi
+
 # IDE
 .idea
 .vscode
