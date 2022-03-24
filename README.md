@@ -14,25 +14,27 @@
 
 ## 🏗 安装
 
+请按照自己的框架安装对应的包
+
 ```sh
 # npm install
+
 # 核心库
 npm install @lotus-design/icons-svg --save
-
 # React
 npm install @lotus-design/icons --save
 
 # yarn install
+
 # 核心库
 npm add @lotus-design/icons-svg
-
 # React
 npm add @lotus-design/icons
 
 # pnpm install
+
 # 核心库
 pnpm i @lotus-design/icons-svg
-
 # React
 pnpm i @lotus-design/icons
 ```
