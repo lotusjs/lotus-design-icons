@@ -13,9 +13,10 @@
   ],
   "scripts": {
     "generate": "esno ./scripts/generate.ts",
+    "build:clean": "esno ./scripts/buildClean.ts",
     "build:es": "tsc --project tsconfig.build.json --module esnext --outDir es",
     "build:lib": "tsc --project tsconfig.build.json --module commonjs --outDir lib",
-    "build": "npm run build:es && npm run build:lib"
+    "build": "pnpm run build:clean && pnpm run build:es && pnpm run build:lib"
   },
   "license": "MIT"
 }

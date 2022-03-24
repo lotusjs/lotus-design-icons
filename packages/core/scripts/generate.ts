@@ -19,7 +19,7 @@ import type { IconDefinition } from '../templates/types';
 
 const CORE_DIR = process.cwd();
 
-const cleanDirs = ['src', 'inline-svg', 'es', 'lib'];
+const cleanDirs = ['src', 'inline-svg', 'inline-namespaced-svg'];
 
 const iconTemplate = fsExtra.readFileSync(
   path.resolve(CORE_DIR, 'templates/icon.ts.ejs'),
@@ -75,7 +75,7 @@ series(
       filename: ({ name }) => getIdentifier({ name, themeSuffix: 'Outlined' })
     }),
 
-    // 2.4 generate abstract node with the theme "outlined"
+    // 2.4 generate abstract node with the theme "twotone"
     generateIcons({
       theme: 'twotone',
       from: ['svg/twotone/*.svg'],
