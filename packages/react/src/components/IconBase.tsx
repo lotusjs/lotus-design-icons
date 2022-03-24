@@ -73,7 +73,7 @@ const IconBase: IconBaseComponent<IconProps> = ({
   if (target && typeof target.icon === 'function') {
     target = {
       ...target,
-      icon: target.icon(colors.primaryColor, colors.secondaryColor),
+      icon: target.icon(colors.primaryColor, colors.secondaryColor as string),
     };
   }
 

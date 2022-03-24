@@ -16,5 +16,5 @@ export function getTwoToneColor(): TwoToneColor {
   if (!colors.calculated) {
     return colors.primaryColor;
   }
-  return [colors.primaryColor, colors.secondaryColor];
+  return [colors.primaryColor, colors.secondaryColor as string];
 }
