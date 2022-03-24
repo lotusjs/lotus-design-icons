@@ -35,8 +35,11 @@ export interface StringifyFn {
 }
 
 export interface SVG2DefinitionOptions {
+  /** 图标的主题风格 */
   theme: ThemeType;
+  /** 对节点的额外转换 */
   extraNodeTransformFactories: TransformFactory[];
+  /** 在套用模板前，对抽象节点的序列化操作 */
   stringify?: StringifyFn;
 }
 

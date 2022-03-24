@@ -2,7 +2,9 @@ import { createTrasformStream } from '../creator';
 import template from 'lodash/template';
 
 export interface UseTemplatePluginOptions {
+  /** 套用的模板 */
   template: string;
+  /** 模板中的插值映射 */
   mapToInterpolate: MapToInterpolate;
 }
 
