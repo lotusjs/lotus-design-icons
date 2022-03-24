@@ -10,7 +10,7 @@
 
 - 📦 内置了丰富的图标资源
 - 🎉 支持对 React、Vue、React Native、Angular 各种框架的适配
-- 💻 使用 TypeScript 编写，提供完整的类型定义
+- 💻 使用 TypeScript 开发，提供完整的类型定义文件
 
 ## 🏗 安装
 
