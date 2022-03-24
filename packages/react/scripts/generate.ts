@@ -1,6 +1,6 @@
 import path from 'path';
 import { logger, fsExtra } from '@walrus/cli-utils';
-import { series, parallel } from 'gulp';
+import { series } from 'gulp';
 import * as allIconDefs from '@lotus-design/icons-svg';
 
 import { generateIcons, } from './tasks';

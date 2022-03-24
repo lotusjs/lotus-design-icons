@@ -3,4 +3,3 @@ export { default as AccountBookFilled } from './AccountBookFilled';
 export { default as AccountBookOutlined } from './AccountBookOutlined';
 export { default as AccountBookTwoTone } from './AccountBookTwoTone';
 export { default as AlertFilled } from './AlertFilled';
-export { default as LoadingFilled } from './LoadingFilled';
