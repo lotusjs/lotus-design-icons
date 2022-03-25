@@ -1,6 +1,7 @@
 import React from 'react';
 import { AbstractNode, IconDefinition } from '@lotus-design/icons-svg/lib/types';
 
+import { useInsertStyles } from '../hooks/useInsertStyles';
 import { getSecondaryColor, isIconDefinition, generate, } from '../utils';
 
 export interface IconProps extends Partial<TwoToneColorPaletteSetter> {
@@ -56,6 +57,8 @@ const IconBase: IconBaseComponent<IconProps> = ({
   secondaryColor,
   ...restProps
 }) => {
+  useInsertStyles();
+
   let colors: TwoToneColorPalette = twoToneColorPalette;
   if (primaryColor) {
     colors = {

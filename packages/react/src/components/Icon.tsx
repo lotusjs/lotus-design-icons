@@ -4,6 +4,8 @@ import classNames from '@pansy/classnames';
 import Context from './Context';
 import { svgBaseProps } from '../utils';
 
+import { useInsertStyles } from '../hooks/useInsertStyles';
+
 export interface IconBaseProps extends React.HTMLProps<HTMLSpanElement> {
   spin?: boolean;
   rotate?: number;
@@ -41,6 +43,8 @@ const Icon = React.forwardRef<HTMLSpanElement, IconComponentProps>(({
   children,
   ...restProps
 }, ref) => {
+
+  useInsertStyles();
 
   const { prefixCls = 'lotus-icon' } = React.useContext(Context);
 

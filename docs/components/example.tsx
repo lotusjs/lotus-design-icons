@@ -1,7 +1,11 @@
-import { AccountBookFilled } from '@lotus-design/icons';
+import React from 'react';
+import { AccountBookFilled, AccountBookOutlined, } from '@lotus-design/icons';
 
 export default () => {
   return (
-    <AccountBookFilled />
+    <>
+      <AccountBookFilled />
+      <AccountBookOutlined spin />
+    </>
   )
 }
